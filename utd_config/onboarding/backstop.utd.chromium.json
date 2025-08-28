@@ -1,0 +1,157 @@
+{
+  "id": "urban_transport_data",
+  "engine": "playwright",
+  "engineOptions": {
+    "browser": "chromium"
+  },
+  "viewports": [
+    {
+      "label": "desctop",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "label": "tablet",
+      "width": 600,
+      "height": 650
+    },
+    {
+      "label": "phone",
+      "width": 375,
+      "height": 536
+    }
+  ],
+  "scenarioDefaults": {
+    "cookiePath": "backstop_data/engine_scripts/cookies.json",
+    "url": "https://urbantransportdata.ru",
+    "selectorExpansion": true,
+    "misMatchThreshold" : 0.1,
+    "requireSameDimensions": true
+  },
+  "scenarios": [
+    {
+      "label": "utd_main",
+      "selectors": ["document"],
+      "onReadyScript": "utd_wait_dialog.js"
+    },
+    {
+      "label": "utd_get_started",
+      "selectors": ["document"],
+      "onReadyScript": "utd_get_started.js"
+    },
+    {
+      "label": "utd_about_project",
+      "selectors": ["document"],
+      "onReadyScript": "utd_about_project.js"
+    },
+    {
+      "label": "utd_scroll_two",
+      "selectors": ["document"],
+      "onReadyScript": "utd_scroll_two.js",
+      "viewports": [
+        {
+          "label": "desctop",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    {
+      "label": "utd_scroll_three",
+      "selectors": ["document"],
+      "onReadyScript": "utd_scroll_three.js",
+      "viewports": [
+        {
+          "label": "desctop",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "label": "tablet",
+          "width": 600,
+          "height": 650
+        },
+        {
+          "label": "phone",
+          "width": 375,
+          "height": 606
+        }
+      ]
+    },
+    {
+      "label": "utd_scroll_four",
+      "selectors": ["document"],
+      "onReadyScript": "utd_scroll_four.js"
+    },
+    {
+      "label": "utd_scroll_five",
+      "selectors": ["document"],
+      "onReadyScript": "utd_scroll_five.js",
+      "viewports": [
+        {
+          "label": "desctop",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "label": "tablet",
+          "width": 1024,
+          "height": 650
+        },
+        {
+          "label": "phone",
+          "width": 375,
+          "height": 536
+        }
+      ]
+    },
+    {
+      "label": "utd_scroll_six",
+      "selectors": ["document"],
+      "onReadyScript": "utd_scroll_six.js",
+      "viewports": [
+        {
+          "label": "desctop",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "label": "tablet",
+          "width": 621,
+          "height": 650
+        },
+        {
+          "label": "phone",
+          "width": 375,
+          "height": 606
+        }
+      ]
+    },
+    {
+      "label": "utd_scroll_seven",
+      "selectors": ["document"],
+      "onReadyScript": "utd_scroll_seven.js",
+      "viewports": [
+        {
+          "label": "desctop",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/chromium/bitmaps_reference/utd/onboarding",
+    "bitmaps_test": "backstop_data/chromium/bitmaps_test/utd/onboarding",
+    "engine_scripts": "backstop_data/chromium/engine_scripts/utd/onboarding",
+    "html_report": "backstop_data/chromium/html_report/utd/onboarding",
+    "ci_report": "backstop_data/chromium/ci_report/utd/onboarding"
+  },
+  "report": ["browser"],
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false,
+  "archiveReport": true,
+  "scenarioLogsInReports": true
+}

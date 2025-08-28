@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "backstopjs": "^6.3.25",
+    "cross-env": "^10.0.0"
+  },
+  "scripts": {
+    "test_garage:chromium": "npx backstop test --config=garage_config/backstop.garage.chromium.json",
+    "test_garage:firefox": "npx backstop test --config=garage_config/backstop.garage.firefox.json",
+    "test_garage:webkit": "npx backstop test --config=garage_config/backstop.garage.webkit.json",
+
+    "test_utd_onboarding:chromium": "npx backstop test --config=utd_config/onboarding/backstop.utd.chromium.json",
+    "test_utd_onboarding:firefox": "npx backstop test --config=utd_config/onboarding/backstop.utd.firefox.json",
+    "test_utd_onboarding:webkit": "npx backstop test --config=utd_config/onboarding/backstop.utd.webkit.json",
+
+    "test_utd_registration:chromium": "npx backstop test --config=utd_config/registration/backstop.utd.chromium.json",
+    "test_utd_registration:firefox": "npx backstop test --config=utd_config/registration/backstop.utd.firefox.json",
+    "test_utd_registration:webkit": "npx backstop test --config=utd_config/registration/backstop.utd.webkit.json"
+  }
+}

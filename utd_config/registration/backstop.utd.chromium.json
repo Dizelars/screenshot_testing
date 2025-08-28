@@ -1,0 +1,62 @@
+{
+  "id": "urban_transport_data",
+  "engine": "playwright",
+  "engineOptions": {
+    "browser": "chromium"
+  },
+  "viewports": [
+    {
+      "label": "desctop",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "label": "mini_desc",
+      "width": 1280,
+      "height": 832
+    },
+    {
+      "label": "tablet",
+      "width": 834,
+      "height": 1194
+    },
+    {
+      "label": "phone",
+      "width": 375,
+      "height": 768
+    }
+  ],
+  "scenarioDefaults": {
+    "cookiePath": "backstop_data/engine_scripts/cookies.json",
+    "url": "https://urbantransportdata.ru",
+    "selectorExpansion": true,
+    "misMatchThreshold" : 0.1,
+    "requireSameDimensions": true
+  },
+  "scenarios": [
+    {
+      "label": "utd_auth",
+      "selectors": ["document"],
+      "onReadyScript": "utd_auth.js"
+    },
+    {
+      "label": "utd_registration",
+      "selectors": ["document"],
+      "onReadyScript": "utd_registration.js"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/chromium/bitmaps_reference/utd/registration",
+    "bitmaps_test": "backstop_data/chromium/bitmaps_test/utd/registration",
+    "engine_scripts": "backstop_data/chromium/engine_scripts/utd/registration",
+    "html_report": "backstop_data/chromium/html_report/utd/registration",
+    "ci_report": "backstop_data/chromium/ci_report/utd/registration"
+  },
+  "report": ["browser"],
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false,
+  "archiveReport": true,
+  "scenarioLogsInReports": true
+}
