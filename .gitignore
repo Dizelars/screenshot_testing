@@ -265,5 +265,14 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-/backstop_data
+/backstop_data/engine_scripts
+
+/backstop_data/chromium/bitmaps_test
+/backstop_data/chromium/html_report
+
+/backstop_data/firefox/bitmaps_test
+/backstop_data/firefox/html_report
+
+/backstop_data/webkit/bitmaps_test
+/backstop_data/webkit/html_report
 # End of https://www.toptal.com/developers/gitignore/api/windows,phpstorm+all,node
