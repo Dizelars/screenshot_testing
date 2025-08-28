@@ -3,38 +3,39 @@
 ### Установка проекта
 
 1. Открываем терминал
+
 2. Устанавливаем пакеты при помощи команды:
     ```javascript
-        npm i
+    npm i
     ``` 
 3. Запуск тестов:
-- UTD (onboarding)
-    ```javascript
+    - UTD (onboarding)
+        ```javascript
         npm run test_utd_onboarding:chromium
-    ```
-    ```javascript
+        ```
+        ```javascript
         npm run test_utd_onboarding:firefox
-    ```
-    ```javascript
+        ```
+        ```javascript
         npm run test_utd_onboarding:webkit
-    ```
-- UTD (registration)
-    ```javascript
+        ```
+    - UTD (registration)
+        ```javascript
         npm run test_utd_registration:chromium
-    ```
-    ```javascript
+        ```
+        ```javascript
         npm run test_utd_registration:firefox
-    ```
-    ```javascript
+        ```
+        ```javascript
         npm run test_utd_registration:webkit
-    ```
-- garage
-    ```javascript
+        ```
+    - garage
+        ```javascript
         npm run test_garage:chromium
-    ```
-    ```javascript
+        ```
+        ```javascript
         npm run test_garage:firefox
-    ```
-    ```javascript
+        ```
+        ```javascript
         npm run test_garage:webkit
-    ```
+        ```
