@@ -27,52 +27,8 @@ module.exports = async (page, scenario, vp) => {
 
   // await page.waitForSelector('dialog[open]', { state: 'hidden', timeout: 60000 });
 
-  // const dialogSelector = 'dialog[open]';
-  // try {
-  //   // Пытаемся дождаться появления диалога
-  //   await page.waitForSelector(dialogSelector, { state: 'visible', timeout: 60000 });
-
-  //   // Если появился → ждем скрытия
-  //   await page.waitForSelector(dialogSelector, { state: 'hidden', timeout: 100000 });
-  //   console.log('✅ Диалог появился и исчез, продолжаем');
-  // } catch (e) {
-  //   if (e.name === 'TimeoutError') {
-  //     console.log('⚠️ Диалог не появился, делаем скриншот и идем дальше');
-  //     await page.screenshot({ path: `no_dialog_${Date.now()}.png`, fullPage: true });
-  //   } else {
-  //     console.error('❌ Ошибка при работе с диалогом:', e);
-  //     await page.screenshot({ path: `dialog_error_${Date.now()}.png`, fullPage: true });
-  //     throw e; // тест падает
-  //   }
-  // }
-
   // await clickWhenReady(page, 'text=Get started', 10000);
   await page.waitForTimeout(5000);
   await page.getByText('Get started', { exact: true }).click();
   await page.waitForTimeout(2500);
 };
-
-// Функция для клика
-// async function clickWhenReady(page, selectorOrOptions, timeout = 10000) {
-//   try {
-//     let el;
-
-//     if (typeof selectorOrOptions === 'string') {
-//       // Обычный селектор
-//       el = page.locator(selectorOrOptions);
-//     } else if (typeof selectorOrOptions === 'object' && selectorOrOptions.role) {
-//       // Поиск через getByRole
-//       el = page.getByRole(selectorOrOptions.role, { name: selectorOrOptions.name });
-//     } else {
-//       throw new Error('Некорректный параметр для clickWhenReady');
-//     }
-
-//     await el.waitFor({ state: 'visible', timeout });
-//     await el.scrollIntoViewIfNeeded();
-//     await el.click({ force: true });
-
-//     console.log(`✅ Клик по элементу "${JSON.stringify(selectorOrOptions)}" выполнен`);
-//   } catch {
-//     console.log(`⚠️ Элемент "${JSON.stringify(selectorOrOptions)}" не появился за ${timeout / 1000} сек. Пропускаем клик.`);
-//   }
-// }

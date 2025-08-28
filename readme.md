@@ -1,4 +1,4 @@
-# Скриншотное тестирование
+# Скриншотное тестирование:metal:
 
 ### Клонирование проекта
 
@@ -10,11 +10,11 @@
     git clone https://github.com/Dizelars/screenshot_testing.git
     ```
 
-### Установка проекта
+### Установка проекта:smile_cat:
 
 1. Открываем терминал
 
-2. Переходим в папку screenshot_testing
+2. Переходим в папку screenshot_testing командой:
     ```javascript
     cd screenshot_testing
     ```
@@ -24,8 +24,8 @@
     npm i
     ``` 
 4. Запуск тестов:
- [!Примечание]
- Перед использованием отключите vpn.
+> [!Примечание]
+> Перед использованием отключите vpn.
     - UTD (onboarding)
         ```javascript
         npm run test_utd_onboarding:chromium
@@ -57,7 +57,7 @@
         npm run test_garage:webkit
         ```
 
-### Полезные ссылки
+### Полезные ссылки:heart_eyes_cat:
 
 - Для тестирования используется **[BackstopJS](https://github.com/garris/BackstopJS)**
 - Команды прописываем при помощи **[Playwright](https://playwright.dev)**
