@@ -3,7 +3,7 @@
 ### Клонирование проекта
 
 1. Создайте пустую папку на своем устройстве
-2. Откройте папку при помощи <a href="https://code.visualstudio.com" target="_blank"><b>VS Code</b></a>
+2. Откройте папку при помощи **[VS Code](https://code.visualstudio.com)**
 3. Откройте терминал
 4. Введите команду:
     ```javascript
@@ -59,5 +59,5 @@
 
 ### Полезные ссылки
 
-- Для тестирования используется <a href="https://github.com/garris/BackstopJS" target="_blank"><b>BackstopJS</b></a>
-- Команды прописываем при помощи <a href="https://playwright.dev" target="_blank"><b>Playwright</b></a>
+- Для тестирования используется **[BackstopJS](https://github.com/garris/BackstopJS)**
+- Команды прописываем при помощи **[Playwright](https://playwright.dev)**
