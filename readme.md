@@ -24,6 +24,8 @@
     npm i
     ``` 
 4. Запуск тестов:
+ [!Примечание]
+ Перед использованием отключите vpn.
     - UTD (onboarding)
         ```javascript
         npm run test_utd_onboarding:chromium
@@ -54,3 +56,8 @@
         ```javascript
         npm run test_garage:webkit
         ```
+
+### Полезные ссылки
+
+- Для тестирования используется **[BackstopJS](https://github.com/garris/BackstopJS)**
+- Команды прописываем при помощи **[Playwright](https://playwright.dev)**
