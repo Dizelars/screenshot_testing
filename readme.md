@@ -11,6 +11,9 @@
     git clone https://github.com/Dizelars/screenshot_testing.git
     ```
 
+> [!TIP]
+> **Если установка проекта через git clone у вас не работает, скачайте проект ZIP-архивом**
+
 ### Установка проекта :heart_eyes_cat:
 
 > [!WARNING]
