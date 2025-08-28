@@ -1,6 +1,6 @@
 # Скриншотное тестирование :metal:
 
-### Клонирование проекта :smiley_cat:
+## Клонирование проекта :smiley_cat:
 
 1. Создайте пустую папку на своем устройстве
 2. Откройте папку при помощи **[VS Code](https://code.visualstudio.com)**
@@ -14,7 +14,7 @@
 > [!TIP]
 > **Если установка проекта через git clone у вас не работает, скачайте проект ZIP-архивом**
 
-### Установка проекта :heart_eyes_cat:
+## Установка проекта :heart_eyes_cat:
 
 > [!WARNING]
 > **Перед использованием отключите VPN**
@@ -62,7 +62,7 @@
         npm run test_garage:webkit
         ```
 
-### Полезные ссылки :scream_cat:
+## Полезные ссылки :scream_cat:
 
 - Для тестирования используется **[BackstopJS](https://github.com/garris/BackstopJS)**
 - Команды прописываем при помощи **[Playwright](https://playwright.dev)**
