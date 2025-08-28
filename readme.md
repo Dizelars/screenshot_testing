@@ -12,6 +12,9 @@
 
 ### Установка проекта :smile_cat:
 
+> [!NOTE]
+> Перед использованием отключите vpn.
+
 1. Открываем терминал
 
 2. Переходим в папку screenshot_testing командой:
@@ -24,8 +27,6 @@
     npm i
     ``` 
 4. Запуск тестов:
-> [!NOTE]
-> Перед использованием отключите vpn.
     - UTD (onboarding)
         ```javascript
         npm run test_utd_onboarding:chromium
