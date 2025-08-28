@@ -31,7 +31,7 @@
     npm i
     ``` 
 4. Запуск тестов:
-    - UTD (onboarding) :purple_heart:
+    - :purple_heart: UTD (onboarding)
 
         ```javascript
         npm run test_utd_onboarding:chromium
@@ -42,7 +42,7 @@
         ```javascript
         npm run test_utd_onboarding:webkit
         ```
-    - UTD (registration)
+    - :purple_heart: UTD (registration)
 
         ```javascript
         npm run test_utd_registration:chromium
@@ -53,7 +53,7 @@
         ```javascript
         npm run test_utd_registration:webkit
         ```
-    - garage
+    - :green_heart: garage
 
         ```javascript
         npm run test_garage:chromium
