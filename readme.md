@@ -1,16 +1,17 @@
 # Скриншотное тестирование :metal:
 
-### Клонирование проекта
+### Клонирование проекта :smiley_cat:
 
-1. Создайте пустую папку на своем устройстве
+:one: Создайте пустую папку на своем устройстве
 2. Откройте папку при помощи **[VS Code](https://code.visualstudio.com)**
 3. Откройте терминал
 4. Введите команду:
+
     ```javascript
     git clone https://github.com/Dizelars/screenshot_testing.git
     ```
 
-### Установка проекта :smile_cat:
+### Установка проекта :heart_eyes_cat:
 
 > [!NOTE]
 > Перед использованием отключите vpn.
@@ -58,7 +59,7 @@
         npm run test_garage:webkit
         ```
 
-### Полезные ссылки :heart_eyes_cat:
+### Полезные ссылки :scream_cat:
 
 - Для тестирования используется **[BackstopJS](https://github.com/garris/BackstopJS)**
 - Команды прописываем при помощи **[Playwright](https://playwright.dev)**
