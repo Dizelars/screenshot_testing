@@ -65,6 +65,13 @@
         npm run test_garage:webkit
         ```
 
+5. Для просмотра отчета тестирования, необходимо:
+    - Установить в VS Code расширение "Live Server"
+    ![Установка Live Server](/readme_instruction/live_server.png "Live Server")
+
+    - Перейти в index.html файл отчета и нажать на кнопку "Go Live" в нижнем правом углу VS Code
+    ![Отчет Go Live](/readme_instruction/go_live.png "Go Live")
+
 ### Полезные ссылки :scream_cat:
 
 - Для тестирования используется **[BackstopJS](https://github.com/garris/BackstopJS)**

@@ -6,9 +6,19 @@
   },
   "viewports": [
     {
-      "label": "default",
+      "label": "desctop",
       "width": 1920,
       "height": 1080
+    },
+    {
+      "label": "tablet",
+      "width": 600,
+      "height": 650
+    },
+    {
+      "label": "phone",
+      "width": 375,
+      "height": 536
     }
   ],
   "scenarioDefaults": {
@@ -20,50 +30,122 @@
   },
   "scenarios": [
     {
-      "label": "urban_transport_data",
-      "delay": 4000,
+      "label": "utd_main",
       "selectors": ["document"],
+      "onReadyScript": "utd_wait_dialog.js"
+    },
+    {
+      "label": "utd_get_started",
+      "selectors": ["document"],
+      "onReadyScript": "utd_get_started.js"
+    },
+    {
+      "label": "utd_about_project",
+      "selectors": ["document"],
+      "onReadyScript": "utd_about_project.js"
+    },
+    {
+      "label": "utd_scroll_two",
+      "selectors": ["document"],
+      "onReadyScript": "utd_scroll_two.js",
       "viewports": [
         {
-          "label": "urban_transport_data",
+          "label": "desctop",
           "width": 1920,
           "height": 1080
         }
       ]
     },
     {
-      "label": "utd_get_started",
-      "delay": 4000,
+      "label": "utd_scroll_three",
       "selectors": ["document"],
+      "onReadyScript": "utd_scroll_three.js",
       "viewports": [
         {
-          "label": "utd_get_started",
+          "label": "desctop",
           "width": 1920,
           "height": 1080
+        },
+        {
+          "label": "tablet",
+          "width": 600,
+          "height": 650
+        },
+        {
+          "label": "phone",
+          "width": 375,
+          "height": 606
         }
-      ],
-      "onReadyScript": "utd_get_started.js"
+      ]
     },
     {
-      "label": "utd_about_project",
-      "delay": 4000,
+      "label": "utd_scroll_four",
       "selectors": ["document"],
+      "onReadyScript": "utd_scroll_four.js"
+    },
+    {
+      "label": "utd_scroll_five",
+      "selectors": ["document"],
+      "onReadyScript": "utd_scroll_five.js",
       "viewports": [
         {
-          "label": "utd_about_project",
+          "label": "desctop",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "label": "tablet",
+          "width": 1024,
+          "height": 650
+        },
+        {
+          "label": "phone",
+          "width": 375,
+          "height": 536
+        }
+      ]
+    },
+    {
+      "label": "utd_scroll_six",
+      "selectors": ["document"],
+      "onReadyScript": "utd_scroll_six.js",
+      "viewports": [
+        {
+          "label": "desctop",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "label": "tablet",
+          "width": 621,
+          "height": 650
+        },
+        {
+          "label": "phone",
+          "width": 375,
+          "height": 606
+        }
+      ]
+    },
+    {
+      "label": "utd_scroll_seven",
+      "selectors": ["document"],
+      "onReadyScript": "utd_scroll_seven.js",
+      "viewports": [
+        {
+          "label": "desctop",
           "width": 1920,
           "height": 1080
         }
-      ],
-      "onReadyScript": "utd_about_project.js"
+      ]
     }
   ],
   "paths": {
-    "bitmaps_reference": "backstop_data/firefox/bitmaps_reference",
-    "bitmaps_test": "backstop_data/firefox/bitmaps_test",
-    "engine_scripts": "backstop_data/firefox/engine_scripts",
-    "html_report": "backstop_data/firefox/html_report",
-    "ci_report": "backstop_data/firefox/ci_report"
+    "bitmaps_reference": "backstop_data/firefox/bitmaps_reference/utd/onboarding",
+    "bitmaps_test": "backstop_data/firefox/bitmaps_test/utd/onboarding",
+    "engine_scripts": "backstop_data/firefox/engine_scripts/utd/onboarding",
+    "html_report": "backstop_data/firefox/html_report/utd/onboarding",
+    "ci_report": "backstop_data/firefox/ci_report/utd/onboarding"
   },
   "report": ["browser"],
   "asyncCaptureLimit": 5,

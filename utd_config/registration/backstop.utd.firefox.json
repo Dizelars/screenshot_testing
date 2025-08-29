@@ -6,9 +6,24 @@
   },
   "viewports": [
     {
-      "label": "default",
+      "label": "desctop",
       "width": 1920,
       "height": 1080
+    },
+    {
+      "label": "mini_desc",
+      "width": 1280,
+      "height": 832
+    },
+    {
+      "label": "tablet",
+      "width": 834,
+      "height": 1194
+    },
+    {
+      "label": "phone",
+      "width": 375,
+      "height": 768
     }
   ],
   "scenarioDefaults": {
@@ -20,50 +35,22 @@
   },
   "scenarios": [
     {
-      "label": "urban_transport_data",
-      "delay": 4000,
+      "label": "utd_auth",
       "selectors": ["document"],
-      "viewports": [
-        {
-          "label": "urban_transport_data",
-          "width": 1920,
-          "height": 1080
-        }
-      ]
+      "onReadyScript": "utd_auth.js"
     },
     {
-      "label": "utd_get_started",
-      "delay": 4000,
+      "label": "utd_registration",
       "selectors": ["document"],
-      "viewports": [
-        {
-          "label": "utd_get_started",
-          "width": 1920,
-          "height": 1080
-        }
-      ],
-      "onReadyScript": "utd_get_started.js"
-    },
-    {
-      "label": "utd_about_project",
-      "delay": 4000,
-      "selectors": ["document"],
-      "viewports": [
-        {
-          "label": "utd_about_project",
-          "width": 1920,
-          "height": 1080
-        }
-      ],
-      "onReadyScript": "utd_about_project.js"
+      "onReadyScript": "utd_registration.js"
     }
   ],
   "paths": {
-    "bitmaps_reference": "backstop_data/firefox/bitmaps_reference",
-    "bitmaps_test": "backstop_data/firefox/bitmaps_test",
-    "engine_scripts": "backstop_data/firefox/engine_scripts",
-    "html_report": "backstop_data/firefox/html_report",
-    "ci_report": "backstop_data/firefox/ci_report"
+    "bitmaps_reference": "backstop_data/firefox/bitmaps_reference/utd/registration",
+    "bitmaps_test": "backstop_data/firefox/bitmaps_test/utd/registration",
+    "engine_scripts": "backstop_data/firefox/engine_scripts/utd/registration",
+    "html_report": "backstop_data/firefox/html_report/utd/registration",
+    "ci_report": "backstop_data/firefox/ci_report/utd/registration"
   },
   "report": ["browser"],
   "asyncCaptureLimit": 5,

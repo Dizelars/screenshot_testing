@@ -64,11 +64,11 @@
     }
   ],
   "paths": {
-    "bitmaps_reference": "backstop_data/firefox/bitmaps_reference",
-    "bitmaps_test": "backstop_data/firefox/bitmaps_test",
-    "engine_scripts": "backstop_data/engine_scripts",
-    "html_report": "backstop_data/firefox/html_report",
-    "ci_report": "backstop_data/firefox/ci_report"
+    "bitmaps_reference": "backstop_data/firefox/bitmaps_reference/garage",
+    "bitmaps_test": "backstop_data/firefox/bitmaps_test/garage",
+    "engine_scripts": "backstop_data/firefox/engine_scripts/garage",
+    "html_report": "backstop_data/firefox/html_report/garage",
+    "ci_report": "backstop_data/firefox/ci_report/garage"
   },
   "report": ["browser"],
   "asyncCaptureLimit": 5,
