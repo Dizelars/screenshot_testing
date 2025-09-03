@@ -266,6 +266,7 @@ $RECYCLE.BIN/
 *.lnk
 
 /backstop_data/engine_scripts
+/backstop_data/reports
 
 /backstop_data/chromium/bitmaps_test
 /backstop_data/chromium/html_report

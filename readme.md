@@ -5,6 +5,9 @@
 1. Создайте пустую папку на своем устройстве
 2. Откройте папку при помощи **[VS Code](https://code.visualstudio.com)**
 3. Откройте терминал
+
+![Откройте терминал](/readme_instruction/terminal.png "Откройте терминал")
+
 4. Введите команду:
 
     ```javascript
@@ -21,7 +24,7 @@
 > [!WARNING]
 > **Перед использованием отключите VPN. Если команды npm не работают, то [установите nodejs](https://nodejs.org/en/download)**
 
-1. Открываем терминал
+1. Открываем терминал (вы в этом уже местер!)
 
 2. Переходим в папку screenshot_testing командой:
     ```javascript
@@ -55,7 +58,7 @@
         ```javascript
         npm run test_utd_registration:webkit
         ```
-    - :green_heart: garage
+    - :green_heart: garage (для разнообразия)
 
         ```javascript
         npm run test_garage:chromium
@@ -75,6 +78,14 @@
     - Перейти в index.html файл отчета и нажать на кнопку "Go Live" в нижнем правом углу VS Code
     
     ![Отчет Go Live](/readme_instruction/go_live.png "Go Live")
+
+    - Если вы запустили новый тест, и хотите просмотреть его отчет, то по его завершению, сначала отключите текущий сервер кликом по:
+
+    ![Отключить сервер](/readme_instruction/server_off.png "Отключить сервер")
+
+    - И находясь на странице нового отчета, запустите его снова кликом по "Go Live":
+
+    ![Включить сервер](/readme_instruction/server_on.png "Включить сервер")
 
 ### Полезные ссылки :scream_cat:
 
