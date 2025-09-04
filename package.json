@@ -14,6 +14,10 @@
 
     "test_utd_news:chromium": "npx backstop test --config=utd_config/news/backstop.utd.chromium.json",
     "test_utd_news:firefox": "npx backstop test --config=utd_config/news/backstop.utd.firefox.json",
-    "test_utd_news:webkit": "npx backstop test --config=utd_config/news/backstop.utd.webkit.json"
+    "test_utd_news:webkit": "npx backstop test --config=utd_config/news/backstop.utd.webkit.json",
+
+    "test_utd_cities:chromium": "npx backstop test --config=utd_config/cities/backstop.utd.chromium.json",
+    "test_utd_cities:firefox": "npx backstop test --config=utd_config/cities/backstop.utd.firefox.json",
+    "test_utd_cities:webkit": "npx backstop test --config=utd_config/cities/backstop.utd.webkit.json"
   }
 }

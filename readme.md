@@ -69,6 +69,17 @@
         ```javascript
         npm run test_utd_news:webkit
         ```
+    - :purple_heart: UTD (cities)
+
+        ```javascript
+        npm run test_utd_cities:chromium
+        ```
+        ```javascript
+        npm run test_utd_cities:firefox
+        ```
+        ```javascript
+        npm run test_utd_cities:webkit
+        ```
 
 5. Для просмотра отчета тестирования, необходимо:
     - Установить в VS Code расширение "Live Server"
