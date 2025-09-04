@@ -58,16 +58,16 @@
         ```javascript
         npm run test_utd_registration:webkit
         ```
-    - :green_heart: garage (для разнообразия)
+    - :purple_heart: UTD (news)
 
         ```javascript
-        npm run test_garage:chromium
+        npm run test_utd_news:chromium
         ```
         ```javascript
-        npm run test_garage:firefox
+        npm run test_utd_news:firefox
         ```
         ```javascript
-        npm run test_garage:webkit
+        npm run test_utd_news:webkit
         ```
 
 5. Для просмотра отчета тестирования, необходимо:

@@ -4,29 +4,28 @@ module.exports = async (page, scenario, vp) => {
   await page.waitForLoadState('networkidle');
 
   const dialogSelector = 'dialog[open]';
-
   try {
-    // 1. Ждём, появится ли диалог (до 30 сек)
+    // 1. Ждём, появится ли диалог
     await page.waitForSelector(dialogSelector, { state: 'visible', timeout: 30000 });
     console.log('👀 Dialog появился.');
 
-    // 2. Если появился — ждём, пока исчезнет (до 30 сек)
+    // 2. Если появился — ждём, пока исчезнет
     try {
       await page.waitForSelector(dialogSelector, { state: 'hidden', timeout: 30000 });
       console.log('✅ Dialog исчез, продолжаем.');
     } catch (e) {
-      console.log('⚠️ Dialog не исчез за 30 сек, продолжаем с тем, что есть.');
+      console.log('⚠️ Dialog не исчез, продолжаем с тем, что есть.');
     }
 
   } catch (e) {
-    // Если за 10 сек так и не появился — идём дальше
     console.log('⚠️ Dialog так и не появился, продолжаем.');
   }
 
-  // await page.waitForSelector('dialog[open]', { state: 'hidden', timeout: 60000 });
+  // Клик в зависимости от разрешения
+  if (vp.label === 'desctop') {
+    await page.waitForSelector(".mui-1ngnhlg button", { state: "visible" });
+    await page.click(".mui-1ngnhlg button:first-of-type svg");
+  }
 
-  // await clickWhenReady(page, 'text=Get started', 10000);
-  await page.waitForTimeout(5000);
-  await page.getByText('Get started', { exact: true }).click();
   await page.waitForTimeout(2500);
 };

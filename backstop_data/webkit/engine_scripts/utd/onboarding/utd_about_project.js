@@ -1,8 +1,6 @@
 module.exports = async (page, scenario, vp) => {
   // Ждем, пока страница загрузится
   await page.waitForLoadState('load');
-
-  // Ждем, пока сеть успокоится
   await page.waitForLoadState('networkidle');
 
   await page.waitForSelector('dialog[open]', { state: 'hidden', timeout: 60000 });

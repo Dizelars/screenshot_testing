@@ -2,7 +2,12 @@
   "id": "urban_transport_data",
   "engine": "playwright",
   "engineOptions": {
-    "browser": "chromium"
+    "browser": "chromium",
+    "args": [
+      "--use-gl=desktop",
+      "--enable-gpu",
+      "--ignore-gpu-blocklist"
+    ]
   },
   "viewports": [
     {
