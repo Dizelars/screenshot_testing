@@ -26,6 +26,10 @@
 
     "test_utd_profile:chromium": "npx backstop test --config=utd_config/profile/backstop.utd.chromium.json",
     "test_utd_profile:firefox": "npx backstop test --config=utd_config/profile/backstop.utd.firefox.json",
-    "test_utd_profile:webkit": "npx backstop test --config=utd_config/profile/backstop.utd.webkit.json"
+    "test_utd_profile:webkit": "npx backstop test --config=utd_config/profile/backstop.utd.webkit.json",
+
+    "test_utd_dashboards:chromium": "npx backstop test --config=utd_config/dashboards/backstop.utd.chromium.json",
+    "test_utd_dashboards:firefox": "npx backstop test --config=utd_config/dashboards/backstop.utd.firefox.json",
+    "test_utd_dashboards:webkit": "npx backstop test --config=utd_config/dashboards/backstop.utd.webkit.json"
   }
 }

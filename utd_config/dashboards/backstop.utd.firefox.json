@@ -1,0 +1,134 @@
+{
+  "id": "urban_transport_data",
+  "engine": "playwright",
+  "engineOptions": {
+    "browser": "firefox",
+    "args": [
+      "--use-gl=desktop",
+      "--enable-gpu",
+      "--ignore-gpu-blocklist"
+    ]
+  },
+  "viewports": [
+    {
+      "label": "desctop",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "label": "mobile",
+      "width": 375,
+      "height": 768
+    }
+  ],
+  "scenarioDefaults": {
+    "cookiePath": "backstop_data/engine_scripts/cookies.json",
+    "url": "https://urbantransportdata.ru/dashboards",
+    "selectorExpansion": true,
+    "misMatchThreshold" : 0.1,
+    "requireSameDimensions": true
+  },
+  "scenarios": [
+    {
+      "label": "utd_dashboards_one_city",
+      "selectors": ["document"],
+      "viewports": [
+        {
+          "label": "desctop",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "label": "tablet",
+          "width": 834,
+          "height": 1194
+        },
+        {
+          "label": "mobile",
+          "width": 375,
+          "height": 768
+        }
+      ],
+      "onBeforeScript": "login.js",
+      "onReadyScript": "utd_dashboards_one_city.js"
+    },
+    {
+      "label": "utd_dashboards_one_physical_accessibility",
+      "selectors": ["document"],
+      "viewports": [
+        {
+          "label": "desctop",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "label": "tablet",
+          "width": 834,
+          "height": 1194
+        },
+        {
+          "label": "mobile",
+          "width": 375,
+          "height": 768
+        }
+      ],
+      "onBeforeScript": "login.js",
+      "onReadyScript": "utd_dashboards_one_physical_accessibility.js"
+    },
+	{
+      "label": "utd_dashboards_one_financial_affordability",
+      "selectors": ["document"],
+      "onBeforeScript": "login.js",
+      "onReadyScript": "utd_dashboards_one_financial_affordability.js"
+    },
+	{
+      "label": "utd_dashboards_one_efficiency_safety",
+      "selectors": ["document"],
+      "onBeforeScript": "login.js",
+      "onReadyScript": "utd_dashboards_one_efficiency_safety.js"
+    },
+    {
+      "label": "utd_dashboards_one_convenience",
+      "selectors": ["document"],
+      "onBeforeScript": "login.js",
+      "onReadyScript": "utd_dashboards_one_convenience.js"
+    },
+    {
+      "label": "utd_dashboards_one_statistical_gen",
+      "selectors": ["document"],
+      "viewports": [
+        {
+          "label": "desctop",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "label": "tablet",
+          "width": 834,
+          "height": 1194
+        },
+        {
+          "label": "mobile",
+          "width": 375,
+          "height": 768
+        }
+      ],
+      "onBeforeScript": "login.js",
+      "onReadyScript": "utd_dashboards_one_statistical_gen.js"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/firefox/bitmaps_reference/utd/dashboards",
+    "bitmaps_test": "backstop_data/firefox/bitmaps_test/utd/dashboards",
+    "engine_scripts": "backstop_data/firefox/engine_scripts/utd/dashboards",
+    "html_report": "backstop_data/firefox/html_report/utd/dashboards",
+    "ci_report": "backstop_data/firefox/ci_report/utd/dashboards"
+  },
+  "report": ["browser"],
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false,
+  "archiveReport": false,
+  "scenarioLogsInReports": false
+}
