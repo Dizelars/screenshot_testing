@@ -91,6 +91,17 @@
         ```javascript
         npm run test_utd_methodology:webkit
         ```
+    - :purple_heart: UTD (profile)
+
+        ```javascript
+        npm run test_utd_profile:chromium
+        ```
+        ```javascript
+        npm run test_utd_profile:firefox
+        ```
+        ```javascript
+        npm run test_utd_profile:webkit
+        ```
 
 5. Для просмотра отчета тестирования, необходимо:
     - Установить в VS Code расширение "Live Server"

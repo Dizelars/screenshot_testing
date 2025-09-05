@@ -1,0 +1,72 @@
+{
+  "id": "urban_transport_data",
+  "engine": "playwright",
+  "engineOptions": {
+    "browser": "webkit",
+    "args": [
+      "--use-gl=desktop",
+      "--enable-gpu",
+      "--ignore-gpu-blocklist"
+    ]
+  },
+  "viewports": [
+    {
+      "label": "desctop",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "scenarioDefaults": {
+    "cookiePath": "backstop_data/engine_scripts/cookies.json",
+    "url": "https://urbantransportdata.ru/cities",
+    "selectorExpansion": true,
+    "misMatchThreshold" : 0.1,
+    "requireSameDimensions": true
+  },
+  "scenarios": [
+    {
+      "label": "utd_profile_menu",
+      "selectors": ["document"],
+      "onBeforeScript": "login.js",
+      "onReadyScript": "utd_profile_menu.js"
+    },
+    {
+      "label": "utd_profile_menu_theme",
+      "selectors": ["document"],
+      "onBeforeScript": "login.js",
+      "onReadyScript": "utd_profile_menu_theme.js"
+    },
+    {
+      "label": "utd_profile_settings",
+      "selectors": ["document"],
+      "onBeforeScript": "login.js",
+      "onReadyScript": "utd_profile_settings.js"
+    },
+    {
+      "label": "utd_profile_settings_delete",
+      "selectors": ["document"],
+      "onBeforeScript": "login.js",
+      "onReadyScript": "utd_profile_settings_delete.js"
+    },
+    {
+      "label": "utd_profile_city_data",
+      "selectors": ["document"],
+      "onBeforeScript": "login.js",
+      "onReadyScript": "utd_profile_city_data.js"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/webkit/bitmaps_reference/utd/profile",
+    "bitmaps_test": "backstop_data/webkit/bitmaps_test/utd/profile",
+    "engine_scripts": "backstop_data/webkit/engine_scripts/utd/profile",
+    "html_report": "backstop_data/webkit/html_report/utd/profile",
+    "ci_report": "backstop_data/webkit/ci_report/utd/profile"
+  },
+  "report": ["browser"],
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false,
+  "archiveReport": false,
+  "scenarioLogsInReports": false
+}
